@@ -1,0 +1,6 @@
+#include "resource.h"
+//this is a big file, so we only load one here. Remember, under 1 mb (1000kb)
+//here is one background for the game. Whne we add new backgrounds we will add
+//them here
+
+

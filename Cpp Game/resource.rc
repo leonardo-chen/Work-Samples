@@ -1,0 +1,111 @@
+#include "resource.h"
+xspriteR1 BITMAP "megR1.bmp"
+xspriteR1mask BITMAP "megR1mask.bmp"
+xspriteR2 BITMAP "megR2.bmp"
+xspriteR2mask BITMAP "megR2mask.bmp"
+xspriteR3 BITMAP "megR3.bmp"
+xspriteR3mask BITMAP "megR3mask.bmp"
+xspriteR4 BITMAP "megR4.bmp"
+xspriteR4mask BITMAP "megR4mask.bmp"
+xspriteRF1 BITMAP "megRF1.bmp"
+xspriteRF1mask BITMAP "megRF1mask.bmp"
+xspriteRF2 BITMAP "megRF2.bmp"
+xspriteRF2mask BITMAP "megRF2mask.bmp"
+xspriteRF3 BITMAP "megRF3.bmp"
+xspriteRF3mask BITMAP "megRF3mask.bmp"
+xspriteRF4 BITMAP "1up.bmp"
+xspriteRF4mask BITMAP "1upmask.bmp"
+xspriteRF5 BITMAP "smash.bmp"
+xspriteRF5mask BITMAP "smashmask.bmp"
+
+xspriteL1 BITMAP "megL1.bmp"
+xspriteL1mask BITMAP "megL1mask.bmp"
+xspriteL2 BITMAP "megL2.bmp"
+xspriteL2mask BITMAP "megL2mask.bmp"
+xspriteL3 BITMAP "megL3.bmp"
+xspriteL3mask BITMAP "megL3mask.bmp"
+xspriteL4 BITMAP "megL4.bmp"
+xspriteL4mask BITMAP "megL4mask.bmp"
+xspriteLF1 BITMAP "megLF1.bmp"
+xspriteLF1mask BITMAP "megLF1mask.bmp"
+xspriteLF2 BITMAP "megLF2.bmp"
+xspriteLF2mask BITMAP "megLF2mask.bmp"
+xspriteLF3 BITMAP "megLF3.bmp"
+xspriteLF3mask BITMAP "megLF3mask.bmp"
+xspriteLF4 BITMAP "smashL.bmp"
+xspriteLF4mask BITMAP "smashLmask.bmp"
+xspriteLF5 BITMAP "1upL.bmp"
+xspriteLF5mask BITMAP "1upLmask.bmp"
+ 
+wastesprite BITMAP "waste.bmp"
+wastespritemask BITMAP "wastemask.bmp"
+tntsprite BITMAP "tntsprite.bmp"
+tntspritemask BITMAP "tntspritemask.bmp"
+powsprite BITMAP "pow.bmp"
+powspritemask BITMAP "powmask.bmp"
+blastspriteR BITMAP "blastR.bmp"
+blastspriteRmask BITMAP "blastRmask.bmp"
+blastspriteL BITMAP "blastL.bmp"
+blastspriteLmask BITMAP "blastLmask.bmp"
+healthsprite BITMAP "health.bmp" 
+healthspritemask BITMAP "healthmask.bmp"
+//here is some new enemy sprite artwork. Make sure that these bitmaps are in
+//your program folder.
+enemystandleftsprite BITMAP enemystandleft.bmp
+enemystandleftspritemask BITMAP enemystandleftmask.bmp
+enemysquatleftsprite BITMAP enemysquatleft.bmp
+enemysquatleftspritemask BITMAP enemysquatleftmask.bmp
+enemyjumpleftsprite BITMAP enemyjumpleft.bmp
+enemyjumpleftspritemask BITMAP enemyjumpleftmask.bmp
+enemystandrightsprite BITMAP enemystandright.bmp
+enemystandrightspritemask BITMAP enemystandrightmask.bmp
+enemysquatrightsprite BITMAP enemysquatright.bmp
+enemysquatrightspritemask BITMAP enemysquatrightmask.bmp
+enemyjumprightsprite BITMAP enemyjumpright.bmp
+enemyjumprightspritemask BITMAP enemyjumprightmask.bmp
+ 
+//megaman will need platforms to hop on
+platformsprite BITMAP "platform.bmp"
+//here is one background for the game. when we add new backgrounds we will add 
+//them here
+background1 BITMAP "background1.bmp"
+background2 BITMAP "background2.bmp" 
+background3 BITMAP "background3.bmp" 
+background4 BITMAP "background4.bmp"
+background5 BITMAP "background5.bmp"
+
+splash BITMAP "splash.bmp"
+scorepage BITMAP "score.bmp"
+//here are the IDS for our menus and dialogs to start the game
+IDR_MYMENU MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit", ID_FILE_EXIT
+        MENUITEM "&New Game", ID_NEWGAME_GO
+    END
+END
+
+IDD_ABOUT DIALOG DISCARDABLE  150, 150, 239, 66
+
+CAPTION "New Game"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&GO",ID_GO,174,18,50,14
+    PUSHBUTTON      "&Cancel",ID_CANCEL,174,35,50,14
+    GROUPBOX        "Go or Cancel",IDC_STATIC,7,7,225,52
+    CTEXT           "Hang on to your joystick!",
+                    IDC_STATIC,16,18,144,33
+END
+
+
+
+
+
+
+
+
+
+
+
+
