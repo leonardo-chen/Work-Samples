@@ -1,2 +1,2 @@
 # Work-Samples
-some random work samples
+some random code samples that i've worked on previously
